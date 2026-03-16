@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cf8d979393e33610764efa497bba10a6" label="Employee Lifecycle" max_length="40" name="x_1959016_automa_0_employee_lifecycle" type="collection">
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="300" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="200" value="in_progress"/>
+                <element inactive_on_update="false" label="New" sequence="100" value="new"/>
+            </choice>
+        </element>
+        <element label="Employee ID" mandatory="true" max_length="40" name="employee_id" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
+        <element label="Joining Date" max_length="40" name="joining_date" type="glide_date"/>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="manager"/>
+        </index>
+    </element>
+</database>
