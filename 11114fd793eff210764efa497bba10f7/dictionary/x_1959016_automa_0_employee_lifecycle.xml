@@ -7,6 +7,7 @@
                 <element inactive_on_update="false" label="New" sequence="100" value="new"/>
             </choice>
         </element>
+        <element label="Request Type" max_length="40" name="request_type" type="string"/>
         <element label="Employee ID" mandatory="true" max_length="40" name="employee_id" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>

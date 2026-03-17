@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12898000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Handle HR request for Onboarding and Offboarding</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>employee_onboarding_and_offboarding</internal_name>
+        <label_cache>[{"name":"Created_1.current.request_type","label":"Trigger - Record Created➛Employee Lifecycle Record➛Request Type","reference":"","reference_display":"Request Type","type":"string","base_type":"string","parent_table_name":"x_1959016_automa_0_employee_lifecycle","column_name":"request_type","usedInstances":{"56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1":["condition"],"282eb6dd-d385-4a3e-a213-97c6da62f1a0":["condition"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Employee Lifecycle Record","reference":"x_1959016_automa_0_employee_lifecycle","reference_display":"Employee Lifecycle","type":"reference","base_type":"reference","usedInstances":{"cde3e166-4426-4acc-8ba8-35138e6d3b68":["requested_item"]},"attributes":{}}]</label_cache>
+        <master_snapshot>8b13736f9327b610764efa497bba10a0</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Employee Onboarding and Offboarding</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4b5ed0b793abb610764efa497bba10f5</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:55:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d2da7ef93e3b610764efa497bba1013</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>Employee Onboarding and Offboarding</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Automated Employee Onboarding &amp;amp; Offboarding System" source="x_1959016_automa_0">11114fd793eff210764efa497bba10f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name>sys_hub_flow_3d2da7ef93e3b610764efa497bba1013</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>535e14b793abb610764efa497bba1032</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1959016_automa_0_employee_lifecycle">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 10:30:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b5ed0b793abb610764efa497bba10f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <table>x_1959016_automa_0_employee_lifecycle</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>3d2da7ef93e3b610764efa497bba1013</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 10:30:46</sys_created_on>
+        <sys_id>475ed0b793abb610764efa497bba10f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <trigger display_value="">4b5ed0b793abb610764efa497bba10f5</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3d2da7ef93e3b610764efa497bba1013^sys_idNOT IN475ed0b793abb610764efa497bba10f6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3d2da7ef93e3b610764efa497bba1013^sys_idNOT IN752da7ef93e3b610764efa497bba1018"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3d2da7ef93e3b610764efa497bba1013</id>
+        <name>Employee Onboarding and Offboarding</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:55:46</sys_created_on>
+        <sys_id>752da7ef93e3b610764efa497bba1018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 06:55:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=752da7ef93e3b610764efa497bba1018"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3d2da7ef93e3b610764efa497bba1013^sys_idNOT IN5b8def239327b610764efa497bba1089,df8def239327b610764efa497bba10cc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</model>
+        <model_id>3d2da7ef93e3b610764efa497bba1013</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3d2da7ef93e3b610764efa497bba1013</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:57:31</sys_created_on>
+        <sys_id>5b8def239327b610764efa497bba1089</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 07:21:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5b8def239327b610764efa497bba1089"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</model>
+        <model_id>3d2da7ef93e3b610764efa497bba1013</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3d2da7ef93e3b610764efa497bba1013</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:57:31</sys_created_on>
+        <sys_id>df8def239327b610764efa497bba10cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 07:21:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df8def239327b610764efa497bba10cc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3d2da7ef93e3b610764efa497bba1013^sys_idNOT IN8f8d2b239327b610764efa497bba10fc"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:57:30</sys_created_on>
+        <sys_id>8f8d2b239327b610764efa497bba10fc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 09:15:42</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS5W2beNEA6QZ1vO1DkAqURNpEadKVKCXeRf69Q90s6+LYsbJ1XgyIpDiHR2fODP3wXWfIw0y/1OfIY1gf6JRLHHLE5ps1hmGphl2OVmpuhXiApAg3+qUMYzzQSShWc7xaMyRhMUEsgkERBjjUL82BniAW4/tNdBPATvB+uk2+p55Pw/OzazojxzDHLoqlWCHXcNWeYoOxyyjB/sZP1wc0gkibP/PXpvka7bayxl9SFoSY65cPjwN9jUIIKRWc77UpqjD5xEeOhQ3fNm3LMgzrYmh6Y9szrcBG2DBgwzo/tTPIFpq2BOBniXmAg5KbBoMhRsEdZ5tyxRI+QMbWCj1H9BvsfmGodQQDdh9nc+Wjm5OSDftLQX18t5ZU8Gwkw5lNChav+JcMv6ITExQzWdAJI3EE++G1gqxA5IjI/VI8zYqAnylPT5dPMuEjVj4hKUPqxRJHinBCGVDvZtxEIg5T9LPp1d3s2v3r0/zqt+nMnU3v57Obq/n0Wn9Jz+X+G6sdM4Q5Fjc7zkupgc8UM/UBebzyAM1Aj/yQruUnX9KkUOLLYKvuK8EDmrLSULhfTEW7Ci9Ov0/ihtEpcr8SsRD639M/mjLOBo/T7XiMUIBRh249UtFt9eQt0GQLCdXT7VNwPnKIhIeG8T+JODeqt2p4JQLMrrfb6TC5WICqKV/HUrH1hLiMXClcFARuhUe1FDC9JursbC+vKjiMObzglt+jqeOUtpK/WxoB3AfIwoKbdEuYJ7f5lrOYawI+HPxofhwCNVIrfI3crNAiZ5TcY4Z9WREB+RpVn36nUUT5ooK6DJpy0IhZhgMxacWRstjRicEf+0ziJulJjcxaMh+dyaZJiIeJZUxUHpuG7RHTmBgjRALbMHyrkslNMJ0oZU0S75LRx+VzlIqRHSC9OsU5eKOaDQfJKNnVYEGCkkhuG1f9QDN7gmYpaDX7s4/yv1KW2fD1rjr3Ha3n2o+CBMEbwaE2eKADEiaewHrf4H4e8v9ZhCLmQd2O1J4a5dp2hfZTzt/PPTohESHeD2B3xTl54Jb2QriIb3pwP5uYnoOH2ADTs8HvvJHjeD6yCJmMJ9gya+63hdGK7UO43itqS9rk2uWArcJJ2vR2hPedALDhg0cDPN0Bc2G2+l829zGc7mmJuQtQQ7gCg5c1DG/BaICLuX6zvRE62eb3qRlPLhx/ZE4m/gRuLZDxZIg9ZA6tEXImY/tiVMv4BpR9MGULMz/kLhNtohRIhxt8zabO63L+nrKNsJSqHB1fpTn0sek7KAtSqZTqs2ipqYhQ+yL4Lzfbddo9hgKYXmj7KteHoFAfVntfGJ6Qy0a/AKF/hfGd0KrP7GDl7K5UNZEku2c9+UqFhxcjh9jtFkOcNovZgumGefbtxYEZknTmWlufcajgk9a86WwM3iDhmkyqHcOelqYvUszeSbHejxT75DaqyMXOe+RbwH6gEpb2FafUMRUTu4JUzftaaDChQRCNEi3/JxEHmrfR5BIDpQz6ZQioqeinuna1ijShlAr+sUCyDrxRzWBYyxuo8ytUNSn0ewPGwQSNRnZHP+zUb8BtgF7Be/Zl6+isSNqSbG/tOm7f+p6t1asi2V1FHFiXej11e3E67dSt5em1U59eePbd31tQnGlJefwP/s1ibVofAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3d2da7ef93e3b610764efa497bba1013^sys_idNOT INb4a0bbab93e3b610764efa497bba1074,bff1bfab9327b610764efa497bba10d8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:11:00</sys_created_on>
+        <sys_id>b4a0bbab93e3b610764efa497bba1074</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:31:38</sys_updated_on>
+        <ui_id>9492966d-43b0-4397-9609-79c3629e6979</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUy27bMBD8FYFnVZCs1Eh8CxIYLZDaRRP4kgbCSlzZRCmSJSk7rpF/70qUHSON0RbIJb7t7IMzo13f75jgbMLGGaYfL7JxlWd5PkrT0flZVo7zMhvxHBDPWMwUNEiVHkqJRR/EbA2yDaD7QSEXzkjYLgb0LqDVSkhuUbHJ/UPMDFjq9WjZZPci9a9MJJQo+/lE5QQzvzWvYjfHvdEsJLTlHZ80ZvjoUXEkIjVIhzFrQHHw2m7ZxNuWAIvA50puDxUroTwNZF3toxO/6NnztKurkZRVGHKHsBhMCnB9DR5uaXLlWzuUVistKnTBE441tNJfHWOhYG680Cq09DKHbi3bRs2CJewwYP9NCGkdkUDT6eyYDzLq25XefNuznArVWzIkpa5AHiLw3oqy9R2fHUOJDQ0qGjBGqGVhrF6Lvpm4NMlSUpDUUm/oUSeWKoGqI56QrZBMCb/u4QVY0an4QmOo+SlmbuuuJDj3rIVMLH62HZOgbNBQBBu6lsoK4y/pgTUOdJ/i/YpzTC9OLlZWPi9Sv9XuaL3dSlvf0e/HE/nvbZrmfIab6JOwGM1VqcFyUh99iL5KBIeRQ9+a6AaM1yaiJYo+30WXFX1Dl/x5KW//wH8e3d+92R/dVKDk7hWz9heHDSnzWATzXlzdkIwWQ3K4vOytLi8bp/3vHd1fEPfuz+/on/bEIT78BvXsNAltBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b4a0bbab93e3b610764efa497bba1074"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>282eb6dd-d385-4a3e-a213-97c6da62f1a0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:16:56</sys_created_on>
+        <sys_id>bff1bfab9327b610764efa497bba10d8</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:31:38</sys_updated_on>
+        <ui_id>0f3dd59d-00be-4e7e-a9ba-f7f8d6e69001</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUXU/bMBT9K5afsyhpWAV9m2CVJm10GqgvgKKb+Ka1cGLPdgpZxX/fTZyWilFtk7YH8uZzP3zO8b252XIp+IxPU0zen6XTMkuzbJIkk9OTtJhmRToRGSCe8Ig3UCNleigU5sMh4htQbQDdPR2FdEZBtxzR64CWa6mExYbPbu4ibsBSrUfLZ9sXoT9loqBANfQnKkeY+c68in0+rGWXIaCt6PkkEcdHj41AIlKBchjxGhoBXtuOz7xtCbAIYtGobp+xlo2nhrzPfXTyB117mvR5FZKyEkNsf8xHkwJcXYCHK+pc+taOqeVayxJd8ERgBa3y54dYSFgYL3UTSgaZY7VWbd1cBkv4vsHuTQhpHZFA0+vsmY8yqqu1fvi2YzmXzWDJGFS6BLU/gfdWFq3v+Ww5KqypUV6DMbJZ5cbqjRyKiUsdrxQd4krpB7rUyVUTQ9kTj8lWiOeEXwzwEqzsVXyhNlT8FHHXuXMFzj1rIRPz723PJCgbNeTBhr6ktNL4D3TBBke6T9FuxAUmZ0cHKy2eB2mYancw3m6tre/pD+2J/G2bJJn4WBulO0S2qKpCgxUkn71jXxWCQ2Zxo++RgVLs0zWDkp7PMZomRi+ksPRMgfHaxL/uzf++7i8X8ve+7RZyLlEJ94qRu21EkgAe82Dsi40cg2w5BsetTP/VVqbTZPje0G4GcW9+NQ/+wkeW9O4nmDKFk4kGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bff1bfab9327b610764efa497bba10d8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3d2da7ef93e3b610764efa497bba1013^sys_idNOT IN2dcf2b679327b610764efa497bba1077,6fb1b7ab9327b610764efa497bba10c2"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f613736f9327b610764efa497bba1064</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:07:14</sys_created_on>
+        <sys_id>2dcf2b679327b610764efa497bba1077</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:44</sys_updated_on>
+        <ui_id>56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2U32vbMBDH/5WiZ2NspwlrXkbpVgjrFlhLX0YxZ+mciMmSK8lJs5D/fSf/SEObsFL6uDfre7q7750+eMtM4+vGuztz6ZxcaDb99RAxqYNG31umoUI2ZdxoIb00Om+FiK1ANSEwc2dzXRiwQurFZwoI6WoFm/tTcb6USljsO9VgqZ5Hy6bbFyG/qTFXUKCiMrfeUj6lS0GnMoEyveApH2WTUZYk2afztJiMijQTI0AY0b0h8WowfnbTKtHJiUI/0t3QyVgRbKVJxPDJoxZIrUtQDiNWgRbgjd3sFYsg5lo9C0upPZVj4fKTk3+odjYeh4sl0owcu+D+mPeL62S+NJLjvA4GO8VDofocblRT6R/dHGHlWEKj/LByUhpH9bAOpoOL3lJ5uzTrn0PDa6nbAfugMhzU/gSe1lA0Hl14GFRYUaG8grqm5eS1NSvZJpOXKl4oOsSlMmtqGiiKgQfjMe0I4mvSv7TyPVgZpvhOZSi5s1mAkzxviaNy3tIIu3Yt+WMTDHUD9qPk3TboguNW1v6S+qywd72LXuN6QOp2e0WP5FHkacwbSzvwscXHBp3Pw9vvdjezb1/NHtbXLL+jwkfQfgHjcpwm4+O0n0+O0X6E89OIZ/9APDzKGwlPkuQ/4oeIS5d3qPaztc3fTfhDwLnr4DpuBHLpyMhd0GbDfzsENgSA5IfS2tjfYYRnbfcXDJZnyQEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3213736f9327b610764efa497bba1069</block>
+        <comment/>
+        <connected_to>56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:15:50</sys_created_on>
+        <sys_id>6fb1b7ab9327b610764efa497bba10c2</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:44</sys_updated_on>
+        <ui_id>282eb6dd-d385-4a3e-a213-97c6da62f1a0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K0XPxtjOWra8jNKtENYtsJa+jCKupetETJZcSU6ahfz3XfkjCW3DRh/2tDffc7/OuTp4y2wbmjb4O3vpvVoYNv3xkDBlIkbfW2agRjZlwhqpgrKGd0DCVqDbmJj5s3lVlRacVGbxkTJS+UbD5v5kgVgqLR0OuxpwNDGgY9Pts1TYNMg1lKhpzm1w1E/tSlJUZVDlH0QuJsXFpMiy4v27vLyYlHkhJ4BQUN3YeDVSP7vpkOSkpriPcD9usk5GWnmWMHwKaCTS6gq0x4TVYCQE6zZ7xCHIudEHYKlMoHEsFj959YtmF+fnsbBC0iiwT+5DPlyuh8XSKoHzJhLskQClHnqE1W1tvvU64s2xglaH8eaEtJ7mYRNJRxYDpep2adffx4XXynQCh6S2AvQ+gkBnKNuAPj4MaqxpEK+haeg4vHF2pbpm4lKnC01BWmm7pqXRRymISDylG0F6TfinDr4Hp6KKrzSGmnuaJXgleOc5GhccSdh1Z+GPbSTUCxyk8P4aVOCFU024pD0rHFjvkpeGPfLqdntFjxRQ8jwVraMbhNThY4s+8Pj2u93N7Mtne3DrSze/ZcQ/8Hv+mt9fcfppkxd/MHl8lr/0eJZl/01+bHLleW/WQVu3/M0ef4iG7jf43jcShfJE5C5is/HfHRMbMoASx9Daup9RwgHb/QadVR/jBQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d2da7ef93e3b610764efa497bba1013</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:57:31</sys_created_on>
+        <sys_id>d78def239327b610764efa497bba10d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Automated Employee Onboarding &amp;amp; Offboarding System" source="x_1959016_automa_0">11114fd793eff210764efa497bba10f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 06:57:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3d2da7ef93e3b610764efa497bba1013</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 06:57:31</sys_created_on>
+        <sys_id>db8def239327b610764efa497bba10c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Automated Employee Onboarding &amp;amp; Offboarding System" source="x_1959016_automa_0">11114fd793eff210764efa497bba10f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 06:57:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3d2da7ef93e3b610764efa497bba1013"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Handle HR request for Onboarding and Offboarding</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>employee_onboarding_and_offboarding</internal_name>
+        <label_cache>[{"name":"Created_1.current.request_type","label":"Trigger - Record Created➛Employee Lifecycle Record➛Request Type","reference":"","reference_display":"Request Type","type":"string","base_type":"string","parent_table_name":"x_1959016_automa_0_employee_lifecycle","column_name":"request_type","usedInstances":{"56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1":["condition"],"282eb6dd-d385-4a3e-a213-97c6da62f1a0":["condition"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Employee Lifecycle Record","reference":"x_1959016_automa_0_employee_lifecycle","reference_display":"Employee Lifecycle","type":"reference","base_type":"reference","usedInstances":{"cde3e166-4426-4acc-8ba8-35138e6d3b68":["requested_item"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Employee Onboarding and Offboarding</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Employee Onboarding and Offboarding">3d2da7ef93e3b610764efa497bba1013</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b13736f9327b610764efa497bba10a0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8b13736f9327b610764efa497bba10a0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8b13736f9327b610764efa497bba10a0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8b13736f9327b610764efa497bba10a0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8b13736f9327b610764efa497bba10a0^sys_idNOT IN4713736f9327b610764efa497bba10a2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8b13736f9327b610764efa497bba10a0</id>
+        <name>Employee Onboarding and Offboarding</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>4713736f9327b610764efa497bba10a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 07:21:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4713736f9327b610764efa497bba10a2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8b13736f9327b610764efa497bba10a0^sys_idNOT IN4713736f9327b610764efa497bba10cf,c713736f9327b610764efa497bba10a4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</model>
+        <model_id>8b13736f9327b610764efa497bba10a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8b13736f9327b610764efa497bba10a0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>4713736f9327b610764efa497bba10cf</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4713736f9327b610764efa497bba10cf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</model>
+        <model_id>8b13736f9327b610764efa497bba10a0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8b13736f9327b610764efa497bba10a0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>c713736f9327b610764efa497bba10a4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c713736f9327b610764efa497bba10a4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8b13736f9327b610764efa497bba10a0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b13736f9327b610764efa497bba10a0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8b13736f9327b610764efa497bba10a0^sys_idNOT IN8713736f9327b610764efa497bba10eb"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>8713736f9327b610764efa497bba10eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 09:15:43</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS5W2beNEA6QZ1vO1DkAqURNpEadKVKCXeRf69Q90s6+LYsbJ1XgyIpDiHR2fODP3wXWfIw0y/1OfIY1gf6JRLHHLE5ps1hmGphl2OVmpuhXiApAg3+qUMYzzQSShWc7xaMyRhMUEsgkERBjjUL82BniAW4/tNdBPATvB+uk2+p55Pw/OzazojxzDHLoqlWCHXcNWeYoOxyyjB/sZP1wc0gkibP/PXpvka7bayxl9SFoSY65cPjwN9jUIIKRWc77UpqjD5xEeOhQ3fNm3LMgzrYmh6Y9szrcBG2DBgwzo/tTPIFpq2BOBniXmAg5KbBoMhRsEdZ5tyxRI+QMbWCj1H9BvsfmGodQQDdh9nc+Wjm5OSDftLQX18t5ZU8Gwkw5lNChav+JcMv6ITExQzWdAJI3EE++G1gqxA5IjI/VI8zYqAnylPT5dPMuEjVj4hKUPqxRJHinBCGVDvZtxEIg5T9LPp1d3s2v3r0/zqt+nMnU3v57Obq/n0Wn9Jz+X+G6sdM4Q5Fjc7zkupgc8UM/UBebzyAM1Aj/yQruUnX9KkUOLLYKvuK8EDmrLSULhfTEW7Ci9Ov0/ihtEpcr8SsRD639M/mjLOBo/T7XiMUIBRh249UtFt9eQt0GQLCdXT7VNwPnKIhIeG8T+JODeqt2p4JQLMrrfb6TC5WICqKV/HUrH1hLiMXClcFARuhUe1FDC9JursbC+vKjiMObzglt+jqeOUtpK/WxoB3AfIwoKbdEuYJ7f5lrOYawI+HPxofhwCNVIrfI3crNAiZ5TcY4Z9WREB+RpVn36nUUT5ooK6DJpy0IhZhgMxacWRstjRicEf+0ziJulJjcxaMh+dyaZJiIeJZUxUHpuG7RHTmBgjRALbMHyrkslNMJ0oZU0S75LRx+VzlIqRHSC9OsU5eKOaDQfJKNnVYEGCkkhuG1f9QDN7gmYpaDX7s4/yv1KW2fD1rjr3Ha3n2o+CBMEbwaE2eKADEiaewHrf4H4e8v9ZhCLmQd2O1J4a5dp2hfZTzt/PPTohESHeD2B3xTl54Jb2QriIb3pwP5uYnoOH2ADTs8HvvJHjeD6yCJmMJ9gya+63hdGK7UO43itqS9rk2uWArcJJ2vR2hPedALDhg0cDPN0Bc2G2+l829zGc7mmJuQtQQ7gCg5c1DG/BaICLuX6zvRE62eb3qRlPLhx/ZE4m/gRuLZDxZIg9ZA6tEXImY/tiVMv4BpR9MGULMz/kLhNtohRIhxt8zabO63L+nrKNsJSqHB1fpTn0sek7KAtSqZTqs2ipqYhQ+yL4Lzfbddo9hgKYXmj7KteHoFAfVntfGJ6Qy0a/AKF/hfGd0KrP7GDl7K5UNZEku2c9+UqFhxcjh9jtFkOcNovZgumGefbtxYEZknTmWlufcajgk9a86WwM3iDhmkyqHcOelqYvUszeSbHejxT75DaqyMXOe+RbwH6gEpb2FafUMRUTu4JUzftaaDChQRCNEi3/JxEHmrfR5BIDpQz6ZQioqeinuna1ijShlAr+sUCyDrxRzWBYyxuo8ytUNSn0ewPGwQSNRnZHP+zUb8BtgF7Be/Zl6+isSNqSbG/tOm7f+p6t1asi2V1FHFiXej11e3E67dSt5em1U59eePbd31tQnGlJefwP/s1ibVofAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8b13736f9327b610764efa497bba10a0^sys_idNOT IN4b13736f9327b610764efa497bba10e7,8b13736f9327b610764efa497bba10e8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>4b13736f9327b610764efa497bba10e7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:25:28</sys_updated_on>
+        <ui_id>9492966d-43b0-4397-9609-79c3629e6979</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUy27bMBD8FYFnVZCs1Eh8CxIYLZDaRRP4kgbCSlzZRCmSJSk7rpF/70qUHSON0RbIJb7t7IMzo13f75jgbMLGGaYfL7JxlWd5PkrT0flZVo7zMhvxHBDPWMwUNEiVHkqJRR/EbA2yDaD7QSEXzkjYLgb0LqDVSkhuUbHJ/UPMDFjq9WjZZPci9a9MJJQo+/lE5QQzvzWvYjfHvdEsJLTlHZ80ZvjoUXEkIjVIhzFrQHHw2m7ZxNuWAIvA50puDxUroTwNZF3toxO/6NnztKurkZRVGHKHsBhMCnB9DR5uaXLlWzuUVistKnTBE441tNJfHWOhYG680Cq09DKHbi3bRs2CJewwYP9NCGkdkUDT6eyYDzLq25XefNuznArVWzIkpa5AHiLw3oqy9R2fHUOJDQ0qGjBGqGVhrF6Lvpm4NMlSUpDUUm/oUSeWKoGqI56QrZBMCb/u4QVY0an4QmOo+SlmbuuuJDj3rIVMLH62HZOgbNBQBBu6lsoK4y/pgTUOdJ/i/YpzTC9OLlZWPi9Sv9XuaL3dSlvf0e/HE/nvbZrmfIab6JOwGM1VqcFyUh99iL5KBIeRQ9+a6AaM1yaiJYo+30WXFX1Dl/x5KW//wH8e3d+92R/dVKDk7hWz9heHDSnzWATzXlzdkIwWQ3K4vOytLi8bp/3vHd1fEPfuz+/on/bEIT78BvXsNAltBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4b13736f9327b610764efa497bba10e7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>282eb6dd-d385-4a3e-a213-97c6da62f1a0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>8b13736f9327b610764efa497bba10e8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:25:28</sys_updated_on>
+        <ui_id>0f3dd59d-00be-4e7e-a9ba-f7f8d6e69001</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUXU/bMBT9K5afsyhpWAV9m2CVJm10GqgvgKKb+Ka1cGLPdgpZxX/fTZyWilFtk7YH8uZzP3zO8b252XIp+IxPU0zen6XTMkuzbJIkk9OTtJhmRToRGSCe8Ig3UCNleigU5sMh4htQbQDdPR2FdEZBtxzR64CWa6mExYbPbu4ibsBSrUfLZ9sXoT9loqBANfQnKkeY+c68in0+rGWXIaCt6PkkEcdHj41AIlKBchjxGhoBXtuOz7xtCbAIYtGobp+xlo2nhrzPfXTyB117mvR5FZKyEkNsf8xHkwJcXYCHK+pc+taOqeVayxJd8ERgBa3y54dYSFgYL3UTSgaZY7VWbd1cBkv4vsHuTQhpHZFA0+vsmY8yqqu1fvi2YzmXzWDJGFS6BLU/gfdWFq3v+Ww5KqypUV6DMbJZ5cbqjRyKiUsdrxQd4krpB7rUyVUTQ9kTj8lWiOeEXwzwEqzsVXyhNlT8FHHXuXMFzj1rIRPz723PJCgbNeTBhr6ktNL4D3TBBke6T9FuxAUmZ0cHKy2eB2mYancw3m6tre/pD+2J/G2bJJn4WBulO0S2qKpCgxUkn71jXxWCQ2Zxo++RgVLs0zWDkp7PMZomRi+ksPRMgfHaxL/uzf++7i8X8ve+7RZyLlEJ94qRu21EkgAe82Dsi40cg2w5BsetTP/VVqbTZPje0G4GcW9+NQ/+wkeW9O4nmDKFk4kGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b13736f9327b610764efa497bba10e8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8b13736f9327b610764efa497bba10a0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8b13736f9327b610764efa497bba10a0^sys_idNOT IN0f13736f9327b610764efa497bba10e0,8f13736f9327b610764efa497bba10e2"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f613736f9327b610764efa497bba1064</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>0f13736f9327b610764efa497bba10e0</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <ui_id>56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQZDs2Gh8KQKnAYy6NdAEuRSBsCIpmyhFKnzYcQX/e5d62WgctGl77E2c5e7ODnegmmjvKu/svb62VqwVmX19jIhQAcPvmigoOZkRqhUTTmiVNUBEtiB9CCzsxUrlGgwTav0eA0zYSsL+4bU43QjJDO86VWCwnuOGzOqfQoJhepFAkV7RlI5H0/EoSUbvLtN8Os7TERsDhzEWlJBziVfnPcWLZYNEr3J3+yrg1hnk1J2XXZW7HtSGBVZpEhH+7LhiHPkUIC2PSAmKgdNmPyCGA1speQQ2QjksR8LlZyu+Y8PRZBIuFhxHpLwNDses062FixtwgFQ8dd50V+lGC8ptKw7jBXjp5qdYe2FVhVHbFAe57LO19KX63CpChgL9MyHiLZLgVZg0UO/mKO42evelZ3krVKNKF5SaghxO4FC73LvApyZc8hILZSVUFSqaVUZvRZOMXMp4LfEQF1LvsGnYvBhoIB6jsBDfIn7TwA9gRJjiE5bB5JZmDlbQrNlSLIcycXKIiN3buQRrj0OiutmTDxTbkbvhslafkEKNqNw1dt7ybo5D9HLpT/a9ruf41o6zLI2pN6iKiw1/8ty6LOzR4bBcfPygh5V/6Yg/qPA2z1zBpJikyeS8Zy6n5zxzxi1vNMroF0YJr/SbPkmS5L9R/toowmbtenezNc3/oU8egynanoPWVFikdh+wRf8PCYE9Lpegp9BOm29hqCN2+AGiBvrojQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3213736f9327b610764efa497bba1069</block>
+        <comment/>
+        <connected_to>56e63f8a-d0b5-4c0d-99e3-43c0a6c1e1d1</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Employee Onboarding and Offboarding">8b13736f9327b610764efa497bba10a0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>8f13736f9327b610764efa497bba10e2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <ui_id>282eb6dd-d385-4a3e-a213-97c6da62f1a0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0XPxtjOWra8jJKuEJYtsJa+jGKuJTkRkyVXH0kzk/++K8tOwtqyrz7uLTr365zje0lHtHetd/ZWX1orVopMv94nRKiA4e+OKGg4mRKqFRNOaFX2QEI2IH0IzO3Zsq4rDYYJtXqPESZsK2F392ICXQvJDB9mtWCwo+OGTLufQoJhfZ1Bnb+jOZ0UF5Miy4q3b/LqYlLlBZsAhwIbSqi4xNTZSPJs0SPJi+zdrg24dQY5De/F0OVmBLVhgVWeJYQ/Oq4YRz41SMsT0oBi4LTZHRDDgS2VPAJroRy2IyH50YrvOLA4Pw+JNUeJlMfg4VkOxkW4vgIHSMVT582QStdaUG6jOYzX4KWbnWIxYdkGqbHEQSXHai19oz5HR8ihwfidEPEWSfA2KA3UBx31zVpvv4wsr4XqXRmCUlOQhxc49K7yLvDpCJe8wUZlA22Ljpat0RvRFyOXJl1JfKS11FscGnYvBRqIp2gspNeIX/XwHRgRVHzCNlgcaVZgBS37PcV2aBMn+4TYnZ1JsPYoEt0tH3ygGCUP4sroTyihRrTuEidv+KBjnzxd+5ON77oZfmvHWZmn1Bt0xaWGP3huXRn2aL9fzD9+0Medf3oTf9PiVa8mf+5qnrmXPzyV4henEr7Tb15KlmX/T+WfT0XYMi74oK0f/oqXch/OIs48eE2FRWq3AZuP/yMhsMPlEvQU2mrzLYg6YvsfBW0SsJEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8b13736f9327b610764efa497bba10a0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8b13736f9327b610764efa497bba10a0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8b13736f9327b610764efa497bba10a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>4f13736f9327b610764efa497bba10cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Automated Employee Onboarding &amp;amp; Offboarding System" source="x_1959016_automa_0">11114fd793eff210764efa497bba10f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 07:21:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8b13736f9327b610764efa497bba10a0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_id>cf13736f9327b610764efa497bba10d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Automated Employee Onboarding &amp;amp; Offboarding System" source="x_1959016_automa_0">11114fd793eff210764efa497bba10f7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Employee Onboarding &amp;amp; Offboarding System">11114fd793eff210764efa497bba10f7</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 07:21:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8b13736f9327b610764efa497bba10a0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8b13736f9327b610764efa497bba10a0"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3d2da7ef93e3b610764efa497bba1013</sys_id>
+        <latest_snapshot>8b13736f9327b610764efa497bba10a0</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3d2da7ef93e3b610764efa497bba1013^sys_idNOT IN0713b36f9327b610764efa497bba1018"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"0713b36f9327b610764efa497bba1018","name":"plan","plan_signature":null}}</plan>
+        <plan_id>3d2da7ef93e3b610764efa497bba1013</plan_id>
+        <snapshot>2f8e1cb793abb610764efa497bba10fb</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 07:21:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0713b36f9327b610764efa497bba1018</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 10:30:46</sys_updated_on>
+        <trigger display_value="">4b5ed0b793abb610764efa497bba10f5</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3d2da7ef93e3b610764efa497bba1013"/>
+</record_update>
