@@ -26,3 +26,5 @@ To deploy and test this system in a new instance:
 <img width="1245" height="1013" alt="a05e78cb-88c3-444d-bdaf-35aff824c3db" src="https://github.com/user-attachments/assets/323b1c4a-ea35-44bc-8f62-37fc590b615e" />
 <img width="1908" height="1019" alt="3b0aa554-4201-451e-8d81-f65eeeacce3f" src="https://github.com/user-attachments/assets/0e67dd24-09ae-4f57-8ff6-09d9d4dd761c" />
 <img width="1914" height="340" alt="ec1b631b-8cd1-4bf8-92f9-46d63f6bd809" src="https://github.com/user-attachments/assets/c605207b-5748-49fa-b36f-9ae8313bbda7" />
+
+## Project Video : https://drive.google.com/drive/folders/1-ayZo1jdmlp0ftgcX1rh1XswUlfwDYFj?usp=sharing
